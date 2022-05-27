@@ -1,0 +1,48 @@
+<resources>
+    <string name = "app_name"> GraphHelper </string>
+    <string name = "tutorial.greeting"> Привет :) Добро пожаловать в GraphHelper! Это приложение
+        предназначено для моделирования графов. Здесь ты можешь найти всю информацию, которая
+        поможет тебе правильно использовать приложение. </string>
+    <string name = "tutorial.graph_activity.head"> Главный экран </string>
+    <string name = "tutorial.graph_activity"> Если ты это читаешь, значит ты нажал кнопку "Туториал"
+        в меню в верхней части главного экрана. Под ней есть ещё несколько кнопок. Первая перебросит тебя
+        в меню настроек; вторая нужна для переключения между ориентированным и неориентированным
+        графом; третья позволит тебе у каждого ребра видеть вес. Под меню находится ползунок, с
+        помощью которого ты можешь увеличить, либо уменьшить изображение. Под ползунком распологается
+        холст, на котором будет отрисовываться граф. Если ты сделаешь касание в каком-либо месте холста,
+        тут же появится вершина графа, но учти, что удалять её придётся в настройках. Ниже холста есть
+        кнопки, с помощью которых ты можешь подвинуть изображение. </string>
+    <string name = "tutorial.settings_activity.head"> Экран настроек </string>
+    <string name = "tutorial.settings_activity"> Экран настроек - это база взаимодействия с графом,
+        содержащая все необходимые функции. Вот они, сверху вниз: удаление вершины, добавление ребра,
+        удаление ребра, поиск кратчайшего пути между вершинами. Ты можешь добавлять/удалять сразу
+        несколько вершин и рёбер за раз, просто раздели их переводом строки. Стоит упомянуть, что
+        конструктор не поддерживает петли и кратные рёбра, поэтому уже существующие рёбра
+        добавляться не будут! Учти, что модификации для ориентированного
+        и неориентированного графов проводятся отдельно. Будь аккуратен при вводе данных! Если ты
+        введёшь что-то неправильно, то приложение сообщит об этом во всплывающем окне. Под некорректными
+        данными подразумеваются несуществующие вершины, рёбра, сторонние символы или неправильный формат. Если же всё
+        будет введено правильно, то ты увидишь всплывающее окно с надписью об успешной операции. В самом низу
+        есть кнопка, которая вернёт тебя на главный экран. </string>
+    <string name = "tutorial.conclusion"> Вот и всё, не так уж и сложно, правда? Теперь ты знаешь,
+        как правильно ипользовать возможности этого приложения. Надеюсь, тебе оно понравится и ты будешь
+        заходить почаще. Удачи! (Нажми на кнопку снизу, чтобы вернуться на главный экран) </string>
+    <string name = "settings_activity.head"> Настройки </string>
+    <string name = "settings_activity.node_deleting.head"> Удаление вершины </string>
+    <string name = "settings_activity.node_deleting.hint"> Введите номер вершины </string>
+    <string name = "settings_activity.node_deleting.button"> Удалить </string>
+    <string name = "settings_activity.edge_adding.head"> Добавление ребра </string>
+    <string name = "settings_activity.edge_adding.hint"> Введите номер вершины начала и конца </string>
+    <string name = "settings_activity.edge_adding.button"> Добавить </string>
+    <string name = "settings_activity.edge_deleting.head"> Удаление ребра </string>
+    <string name = "settings_activity.edge_deleting.hint"> Введите номер вершины начала и конца </string>
+    <string name = "settings_activity.edge_deleting.button"> Удалить </string>
+    <string name = "settings_activity.search.head"> Поиск кратчайшего пути </string>
+    <string name = "settings_activity.search.hint"> Введите номер вершины начала и конца </string>
+    <string name = "settings_activity.search.button"> Найти </string>
+    <string name = "graph_activity.tutorial"> Туториал </string>
+    <string name = "graph_activity.settings"> Настройки </string>
+    <string name = "graph_activity.direction"> Направление рёбер </string>
+    <string name = "graph_activity.weight"> Вес рёбер </string>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/frame"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/tutorial.head"
+                    android:text="@string/graph_activity.tutorial"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/settings.head"
+                    android:text="@string/graph_activity.settings"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toBottomOf="@id/tutorial.head"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/direction.head"
+                    android:text="@string/graph_activity.direction"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toBottomOf="@id/settings.head"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/weight.head"
+                    android:text="@string/graph_activity.weight"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toBottomOf="@id/direction.head"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_margin="5dp"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tutorial.button"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/info"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/settings.button"
+                    app:layout_constraintTop_toBottomOf="@id/tutorial.button"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/setting"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/direction.switch"
+                    app:layout_constraintTop_toBottomOf="@id/settings.button"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_margin="5dp"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/weight.switch"
+                    app:layout_constraintTop_toBottomOf="@id/direction.switch"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_margin="5dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekbar"/>
+
+            <com.example.graphhelper.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/frame"
+                android:layout_margin="10dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/upButton"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/downButton"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/arrow"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/downButton"
+                    app:layout_constraintLeft_toRightOf="@id/upButton"
+                    app:layout_constraintRight_toLeftOf="@id/leftButton"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/arrow"
+                    android:rotation="180"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/leftButton"
+                    app:layout_constraintLeft_toRightOf="@id/downButton"
+                    app:layout_constraintRight_toLeftOf="@id/rightButton"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/arrow"
+                    android:rotation="270"/>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/rightButton"
+                    app:layout_constraintLeft_toRightOf="@id/leftButton"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/arrow"
+                    android:rotation="90"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
